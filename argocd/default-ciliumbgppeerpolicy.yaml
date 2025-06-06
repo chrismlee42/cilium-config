@@ -1,0 +1,21 @@
+apiVersion: cilium.io/v2alpha1
+kind: CiliumBGPPeeringPolicy
+metadata:
+  name: default
+spec:
+  nodeSelector:
+    matchLabels:
+      kubernetes.io/hostname: chris-pc
+  virtualRouters:
+  - localASN: 64513
+    neighbors:
+    - peerAddress: 192.168.1.1/32
+      peerASN: 64512
+      gracefulRestart:
+        enabled: true
+    serviceSelector:
+      matchExpressions:
+      - key: somekey
+        operator: NotIn
+        values:
+        - never-used-value
