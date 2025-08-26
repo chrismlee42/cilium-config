@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '.github/workflows/sync-argocd-application.yaml'
+      - 'argocd/**'
   workflow_dispatch:
 jobs:
   sync:
