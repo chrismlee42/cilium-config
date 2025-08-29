@@ -12,6 +12,7 @@ spec:
     - "*.service.chris-pc.clee.private.morphacy.net"
   parentRefs:
     - name: default
+      namespace: default
       port: 80
       sectionName: http
   rules:

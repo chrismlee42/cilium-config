@@ -12,11 +12,12 @@ spec:
     - "*.service.chris-pc.clee.private.morphacy.net"
   parentRefs:
     - name: tls-passthrough
+      namespace: default
       port: 80
       sectionName: http
   rules:
     - filters:
         - type: RequestRedirect
           requestRedirect:
-            scheme: https
+            scheme: tls
             port: 443
