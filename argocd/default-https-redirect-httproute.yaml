@@ -11,8 +11,7 @@ spec:
     - "*.service.clee.private.morphacy.net"
     - "*.service.chris-pc.clee.private.morphacy.net"
   parentRefs:
-    - group: gateway.networking.k8s.io
-      name: default
+    - name: default
       namespace: default
       port: 80
       sectionName: http

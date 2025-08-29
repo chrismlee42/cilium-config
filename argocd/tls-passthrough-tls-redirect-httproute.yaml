@@ -11,8 +11,7 @@ spec:
     - "*.service.clee.private.morphacy.net"
     - "*.service.chris-pc.clee.private.morphacy.net"
   parentRefs:
-    - group: gateway.networking.k8s.io
-      name: tls-passthrough
+    - name: tls-passthrough
       namespace: default
       port: 80
       sectionName: http
