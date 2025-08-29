@@ -19,5 +19,5 @@ spec:
     - filters:
         - type: RequestRedirect
           requestRedirect:
-            scheme: tls
+            scheme: https
             port: 443
