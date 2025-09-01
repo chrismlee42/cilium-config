@@ -1,0 +1,20 @@
+apiVersion: cilium.io/v2
+kind: CiliumBGPPeerConfig
+metadata:
+  name: cilium-peer
+spec:
+  # authSecretRef: bgp-auth-secret
+  # ebgpMultihop: 1
+  # families:
+  #   - afi: ipv4
+  #     safi: unicast
+  #     advertisements:
+  #       matchLabels:
+  #         advertise: "bgp"
+  gracefulRestart:
+    enabled: true
+    restartTimeSeconds: 15
+  timers:
+    connectRetrySeconds: 5
+    holdTimeSeconds: 90
+    keepAliveTimeSeconds: 30

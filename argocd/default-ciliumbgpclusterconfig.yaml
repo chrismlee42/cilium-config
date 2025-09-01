@@ -1,0 +1,22 @@
+apiVersion: cilium.io/v2
+kind: CiliumBGPClusterConfig
+metadata:
+  name: cilium-bgp
+spec:
+  nodeSelector:
+    matchLabels:
+      kubernetes.io/hostname: chris-pc
+  bgpInstances:
+  - name: "instance-65000"
+    localASN: 65513
+    # localPort: 179
+    peers:
+    - name: "gw01.clee.private.morphacy.net"
+      # autoDiscovery:
+      #   defaultGateway:
+      #     addressFamily: ipv4
+      #   mode: "DefaultGateway"
+      peerASN: 65512
+      peerAddress: 192.168.1.1/32
+      peerConfigRef:
+        name: "cilium-peer"
