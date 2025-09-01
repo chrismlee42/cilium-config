@@ -1,7 +1,7 @@
 apiVersion: cilium.io/v2
 kind: CiliumBGPClusterConfig
 metadata:
-  name: cilium-bgp
+  name: default
 spec:
   nodeSelector:
     matchLabels:
@@ -17,6 +17,6 @@ spec:
       #     addressFamily: ipv4
       #   mode: "DefaultGateway"
       peerASN: 65512
-      peerAddress: 192.168.1.1/32
+      peerAddress: 192.168.1.1
       peerConfigRef:
-        name: "cilium-peer"
+        name: "default"

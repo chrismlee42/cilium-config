@@ -1,7 +1,7 @@
 apiVersion: cilium.io/v2
 kind: CiliumBGPPeerConfig
 metadata:
-  name: cilium-peer
+  name: default
 spec:
   # authSecretRef: bgp-auth-secret
   # ebgpMultihop: 1
