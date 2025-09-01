@@ -2,7 +2,6 @@ apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
   name: https-redirect
-  namespace: default
 spec:
   hostnames:
     - "chris-pc.clee.private.morphacy.net"
@@ -20,3 +19,6 @@ spec:
         - type: RequestRedirect
           requestRedirect:
             scheme: https
+  source:
+    kustomize:
+      namespace: default
