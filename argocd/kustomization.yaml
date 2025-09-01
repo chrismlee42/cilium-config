@@ -9,13 +9,10 @@ commonLabels:
   managementCodeGroup: chrismlee42-dev
   managementCodeProject: cilium-config
 
+namespace: kube-system
+
 resources:
   - https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.0/experimental-install.yaml
   - default-ciliumbgppeeringpolicy.yaml
   - default-ciliuml2announcementpolicy.yaml
   - default-ciliumloadbalancerippool.yaml
-  - default-https-redirect-httproute.yaml
-  - default-gateway.yaml
-  - domain-wildcard-certificate.yaml
-  # - tls-passthrough-gateway.yaml
-  # - tls-passthrough-tls-redirect-httproute.yaml
