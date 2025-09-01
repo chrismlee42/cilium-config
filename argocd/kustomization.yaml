@@ -9,8 +9,6 @@ commonLabels:
   managementCodeGroup: chrismlee42-dev
   managementCodeProject: cilium-config
 
-namespace: kube-system
-
 resources:
   - https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.0/experimental-install.yaml
   - default-ciliumbgppeeringpolicy.yaml
