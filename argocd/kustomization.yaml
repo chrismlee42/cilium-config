@@ -12,7 +12,7 @@ commonLabels:
 namespace: kube-system
 
 resources:
-  - https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.0/experimental-install.yaml
+  - https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.4.1/experimental-install.yaml
   # - default-ciliumbgpadvertisement.yaml
   # - default-ciliumbgpclusterconfig.yaml
   # - default-ciliumbgppeerconfig.yaml
