@@ -16,6 +16,6 @@ resources:
   - default-ciliumbgpadvertisement.yaml
   - default-ciliumbgpclusterconfig.yaml
   - default-ciliumbgppeerconfig.yaml
-  - default-ciliumbgppeeringpolicy.yaml
+  # - default-ciliumbgppeeringpolicy.yaml
   - default-ciliuml2announcementpolicy.yaml
   - default-ciliumloadbalancerippool.yaml
