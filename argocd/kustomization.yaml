@@ -13,6 +13,7 @@ namespace: kube-system
 
 resources:
   - https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.4.1/experimental-install.yaml
+  - bgp-auth-secret-secret.yaml
   - default-ciliumbgpadvertisement.yaml
   - default-ciliumbgpclusterconfig.yaml
   - default-ciliumbgppeerconfig.yaml
