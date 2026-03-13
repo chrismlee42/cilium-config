@@ -15,6 +15,6 @@ spec:
     enabled: true
     restartTimeSeconds: 15
   timers:
-    connectRetrySeconds: 5
+    # connectRetrySeconds: 5
     holdTimeSeconds: 90
     keepAliveTimeSeconds: 30
