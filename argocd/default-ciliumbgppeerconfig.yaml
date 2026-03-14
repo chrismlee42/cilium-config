@@ -3,7 +3,7 @@ kind: CiliumBGPPeerConfig
 metadata:
   name: default
 spec:
-  authSecretRef: bgp-auth-secret
+  #authSecretRef: bgp-auth-secret
   ebgpMultihop: 1
   families:
     - afi: ipv4
