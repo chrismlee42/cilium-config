@@ -7,8 +7,8 @@ spec:
     matchLabels:
       kubernetes.io/hostname: chris-pc
   bgpInstances:
-  - name: "instance-65513"
-    localASN: 65513
+  - name: "instance-64513"
+    localASN: 64513
     localPort: 179
     peers:
     - name: "peer-gw01.clee.private.morphacy.net"
@@ -16,7 +16,7 @@ spec:
         defaultGateway:
           addressFamily: ipv4
         mode: "DefaultGateway"
-      peerASN: 65512
+      peerASN: 64512
       peerAddress: 192.168.1.1
       peerConfigRef:
         name: "default"
